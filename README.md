@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏢 Common Ground – MVP Plan
 
-## Getting Started
+**Common Ground** is a platform for booking rooms **by the hour** — whether in a university, business, or home. Think Airbnb meets Peerspace, but focused on **short, flexible rentals** for meetings, fitness, focus groups, or study sessions.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Vision
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Help people **find affordable, nearby spaces** for short-term needs.  
+- Enable universities, businesses, and homeowners to **monetize unused rooms**.  
+- Build trust and safety into every booking through contracts, payments, and reviews.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 MVP Scope
 
-## Learn More
+### Core User Flows
+1. **Browse & Search**
+   - Search by location, time, category (fitness, meeting, study).  
+   - Map + list view.  
 
-To learn more about Next.js, take a look at the following resources:
+2. **Book a Space**
+   - Select hourly slot, confirm booking, pay with card.  
+   - Instant confirmation.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Host a Space**
+   - Create listing with photos, description, hourly rate.  
+   - Manage availability calendar.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Payments**
+   - Stripe-powered checkout.  
+   - Automatic payouts to hosts.  
 
-## Deploy on Vercel
+5. **Trust & Safety**
+   - Basic identity verification.  
+   - Ratings and reviews after each booking.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack (MVP)
+
+- **Frontend**: Next.js + Tailwind CSS  
+- **Backend**: Node.js (Express/NestJS) + PostgreSQL (PostGIS for location search)  
+- **Auth**: Clerk/Auth0 (host & renter accounts)  
+- **Payments**: Stripe (hourly billing + payouts)  
+- **Maps**: Mapbox/Leaflet for discovery  
+- **Hosting**: Vercel (frontend), Render/Railway (backend)  
+
+---
+
+## 📦 Deliverables (Phase 1)
+
+- [ ] Landing page + marketing site  
+- [ ] User registration (host vs. renter roles)  
+- [ ] Host listing flow (add room, photos, pricing, availability)  
+- [ ] Search & booking flow (map + calendar picker)  
+- [ ] Stripe checkout & payouts  
+- [ ] Ratings/reviews system  
+- [ ] Admin dashboard (basic moderation, support)  
+
+---
+
+## ⚖️ Legal & Compliance (Early Considerations)
+
+- Draft **Host Terms & Guest Terms** with liability waivers.  
+- Require hosts to certify compliance with **zoning/permits**.  
+- Collect/remit sales/occupancy taxes in supported states.  
+- Explore liability coverage similar to Airbnb/Peerspace.  
+
+---
+
+## 🚀 Roadmap (Next Steps)
+
+- Phase 2:  
+  - Calendar sync with Google/Outlook.  
+  - Host analytics dashboard.  
+  - Mobile app (React Native).  
+
+- Phase 3:  
+  - Insurance add-on products.  
+  - Enterprise tools for universities/businesses.  
+  - AI-powered recommendations (suggest best space by activity & group size).  
