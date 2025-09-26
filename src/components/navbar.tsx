@@ -23,9 +23,8 @@ export default function NavBar(){
                     link.special ? (
                         <div
                         key={link.href}
-                        className="bg-gray-300 w-20.5 h-10 flex items-center justify-center rounded text-black"
                         >
-                            <Link href={link.href}>
+                            <Link className="bg-gray-300 w-20.5 h-10 flex items-center justify-center rounded text-black" href={link.href}>
                                 {link.label}
                             </Link>
                         </div>
