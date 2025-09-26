@@ -1,20 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { listings } from "@/data/listings";
 import ListingCard from "@/components/cards";
+import NavBar from "@/components/navbar";
 
 export default function Home() {
   return (
     <div>
-      <div className="topNav flex justify-between items-center bg-gray-800">
-        <div className="text-lg font-semibold text-white p-4">CommonGround</div>
-        <div className="space-x-4 text-white p-4">
-          <Link href="/contact">Contact</Link>
-          <Link href="/about">About</Link>
-        </div>
-      </div>
-          
+      <NavBar/>
+      
       <div className="relative w-full h-[500px]">
         <Image
           src="/home.jpg"

@@ -2,6 +2,9 @@
 
 export default function Login(){
     return(
-        <div>This is the login page</div>
+        <div>Get Started
+            
+
+        </div>
     );
 }
