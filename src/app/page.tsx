@@ -3,12 +3,13 @@ import Image from "next/image";
 import { listings } from "@/data/listings";
 import ListingCard from "@/components/cards";
 import NavBar from "@/components/navbar";
+import BottomLinks from "@/components/bottomLinks";
 
 export default function Home() {
   return (
     <div>
       <NavBar/>
-      
+
       <div className="relative w-full h-[500px]">
         <Image
           src="/home.jpg"
@@ -36,6 +37,7 @@ export default function Home() {
         ))}
        </div>
       </div>
+    <BottomLinks/>
     </div>
   );
 }
